@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Microsoft JhengHei;
+  background-color: #fbe0c3;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#addArea {
+  width: 346px;
+  height: 120px;
+  background-color: #ffbb98;
+  position: fixed;
+  top: 70px;
+  right: 70px;
+  z-index: 99;
+  border-radius: 1rem;
+  border: 5px solid #fbe0c3;
+  -webkit-box-shadow: 4px 3px 2px #fff2e4;
+          box-shadow: 4px 3px 2px #fff2e4;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#addArea textarea {
+  width: 70%;
+  height: 86%;
+  border: none;
+  border-radius: 0.4em;
+  resize: none;
+  padding: 0.4rem;
+}
+
+#addArea textarea:focus {
+  outline: none !important;
+  border: 1px solid tomato;
+  -webkit-box-shadow: 0 0 10px tomato;
+          box-shadow: 0 0 10px tomato;
+}
+
+#addArea .button {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #fbe0c3;
+}
+
+#addArea .button:hover {
+  border: 1px solid tomato;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0.8rem;
+  position: absolute;
+}
+
+.container .note {
+  width: 200px;
+  height: 200px;
+  color: white;
+  float: left;
+  position: relative;
+}
+
+.container .note .note-text {
+  width: 100%;
+  height: 175px;
+  margin-bottom: 5px;
+  border: 2px solid #fbe0c3;
+  padding: 0.4rem;
+}
+
+.container .note .colorBox {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  border: 2px solid #fbe0c3;
+}
+
+.container .note .color1 {
+  background-color: #344648;
+}
+
+.container .note .color2 {
+  background-color: #7d8e95;
+}
+
+.container .note .color3 {
+  background-color: #ffbb98;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,95 @@
+$color1: #fbe0c3;
+$color2: #ffbb98;
+$color3: #7d8e95;
+$color4: #344648;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Microsoft JhengHei;
+  background-color: $color1;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#addArea {
+  width: 346px;
+  height: 120px;
+  background-color: $color2;
+  position: fixed;
+  top: 70px;
+  right: 70px;
+  z-index: 99;
+  border-radius: 1rem;
+  border: 5px solid $color1;
+  box-shadow: 4px 3px 2px #fff2e4;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  textarea {
+    width: 70%;
+    height: 86%;
+    border: none;
+    border-radius: 0.4em;
+    resize: none;
+    padding: 0.4rem;
+    &:focus {
+      outline: none !important;
+      border: 1px solid tomato;
+      box-shadow: 0 0 10px tomato;
+    }
+  }
+
+  .button {
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: $color1;
+  }
+
+  .button:hover {
+    border: 1px solid tomato;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0.8rem;
+  position: absolute;
+
+  .note {
+    width: 200px;
+    height: 200px;
+    color: white;
+    float: left;
+    position: relative;
+    .note-text {
+      width: 100%;
+      height: 175px;
+      margin-bottom: 5px;
+      border: 2px solid $color1;
+      padding: 0.4rem;
+    }
+    .colorBox {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 5px;
+      border: 2px solid $color1;
+    }
+    .color1 {
+      background-color: $color4;
+    }
+    .color2 {
+      background-color: $color3;
+    }
+    .color3 {
+      background-color: $color2;
+    }
+  }
+}
