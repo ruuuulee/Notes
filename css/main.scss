@@ -73,6 +73,9 @@ body {
       margin-bottom: 5px;
       border: 2px solid $color1;
       padding: 0.4rem;
+      word-break: break-all;
+      word-wrap: break-word;
+      overflow: auto;
     }
     .colorBox {
       width: 20px;
@@ -95,4 +98,17 @@ body {
       font-size: 1.2rem;
     }
   }
+}
+.note-text::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.1);
+  background-color: #ffc0cb;
+}
+//捲軸寬度
+.note-text::-webkit-scrollbar {
+  width: 7px;
+  background-color: white;
+}
+//捲軸本體顏色
+.note-text::-webkit-scrollbar-thumb {
+  background-color: white;
 }
