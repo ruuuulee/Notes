@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
   width: 100vw;
   height: 100vh;
   margin: 0.8rem;
-  position: absolute;
+  position: relative;
 }
 
 .container .note {
@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
   height: 200px;
   color: white;
   float: left;
-  position: relative;
+  position: absolute;
 }
 
 .container .note .note-text {
@@ -102,5 +102,10 @@ body::-webkit-scrollbar {
 
 .container .note .color3 {
   background-color: #ffbb98;
+}
+
+.container .note .deleteBtn {
+  color: tomato;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
